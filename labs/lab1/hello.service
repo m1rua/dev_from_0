@@ -1,0 +1,10 @@
+[Unit]
+Description=hello service lab1
+After=network.target
+
+[Service]
+ExecStart=/home/m1rua/dev_from_0/labs/lab1/hello.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
